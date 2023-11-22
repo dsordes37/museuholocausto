@@ -1,0 +1,12 @@
+main{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(imgs/backgrounds/aba_videos.png);
+}iframe{
+    width: 60vw;
+    height: 35vw;
+}header p{
+    padding-top: 10px;
+    padding-left: 50px;
+    font-weight: bolder;
+}

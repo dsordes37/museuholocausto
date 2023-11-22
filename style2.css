@@ -1,0 +1,147 @@
+header svg{
+    fill: var(--cor1);
+    height: 30px;
+    margin: 5px;
+}
+
+#capa{
+    background-color: white;
+    padding-top: 40px;
+}#capa h1, #capa p:not(#capa_box>p){
+    color: var(--cor1);
+}
+#capa h1{
+    font-size: var(--fsl2);
+}
+
+#capa_box{
+    width: 70vw;
+    aspect-ratio: 1/.5;
+    padding: 30px 20px;
+    margin: 10px;
+
+    background-color: var(--cor1);
+    border-radius: 20px;
+
+}
+
+
+#pessoas h2{
+    text-align: center;
+    font-size: var(--fsl1);
+}
+
+.ps{
+    width: 100vw;
+    position: relative;
+    aspect-ratio: 1/.4;
+    padding: 20px;
+}
+
+#ps2, #ps3{
+    background-color: white;
+    color: var(--cor1);
+}
+
+#img_hitler{
+    background-image: url(imgs/personalidades/hitler.png);
+}
+#img_anne{
+    background-image: url(imgs/personalidades/anne.png);
+}
+#img_janusz{
+    background-image: url(imgs/personalidades/janusz.png);
+}
+#img_irena{
+    background-image: url(imgs/personalidades/irena.png);
+}
+.imagem{
+    width: 25vw;
+    aspect-ratio: 1;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+#recomend{
+    background-color: white;
+    color: var(--cor1);
+    padding: 30px 20px;
+
+    text-align: center;
+}
+#recomend h2{
+    font-size: var(--fsl1);
+    margin: 30px;
+}
+#recomend div{
+    gap: 10px;
+    align-items: center;
+}
+
+.ob>div:first-child{
+    background-color: gray;
+    background-size: cover;
+    background-position: center;
+    width: 28vw;
+    aspect-ratio: 1;
+
+}#ob1>div:first-child{
+    background-image: url(imgs/recomendações/R1.png);
+}#ob2>div:first-child{
+    background-image: url(imgs/recomendações/R2.png);
+}#ob3>div:first-child{
+    background-image: url(imgs/recomendações/R3.png);
+}
+.rec_cap p{
+    font-weight: bolder;
+    color: white;
+    text-align: justify;
+    padding: 15px;
+    display: none;
+}
+.desc{
+    display: none;
+}
+
+
+
+@media(min-width: 1200px){
+    .rec_cap{
+        position: relative;
+    }.rec_cap:hover *{
+        z-index: 1;
+        position: relative;
+    }.rec_cap:hover::after{
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.637);
+        
+    
+    }
+    
+    
+    
+    
+    .rec_cap:hover p{
+        display: block;
+    }
+}
+@media(max-width: 1190px){
+    .desc{
+        display: block;
+        width: 80vw;
+    }#recomend>div{
+        flex-direction: column;
+    }
+
+}
+@media(max-width: 460px){
+    #capa_box{
+        width: 90vw;
+    }
+}

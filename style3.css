@@ -1,0 +1,43 @@
+main{
+    background-color: var(--cor1);
+    background-image: url(imgs/backgrounds/fundo_artigos.png);
+    background-size: cover;
+    background-position: center;
+}hr{
+    width: 80vw;
+    margin: auto;
+}
+.artigos{
+    width: 100vw;
+    height: 50vh;
+
+    gap: 20px;
+
+    padding: 60px 20px;
+
+    align-items: center;
+    font-size: var(--fs1);
+}.artigos>div{
+    width: 28vw;
+    height: 40vw;
+}.artigo{
+    background-color: white;
+    border-top: 5px solid var(--cor2);
+
+    color: var(--cor1);
+}main>.artigos:last-child{
+    justify-content: end;
+}
+
+.descri{
+    text-align: justify;
+}
+
+@media(max-width: 600px){
+    .artigos>div{
+        width: 40vw;
+        height: 70vw;
+    }.artigos{
+        justify-content: center;
+    }
+}
